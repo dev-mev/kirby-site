@@ -8,7 +8,7 @@
 
     <h2>BeMo Academic Consulting Inc.</h2>
     <?php if ($page->phone()->isNotEmpty()): ?>
-      <p><span class="underline">Toll Free:</span <?= Html::tel($page->phone()) ?></p>
+      <p><span class="underline">Toll Free:</span> <?= Html::tel($page->phone()) ?></p>
     <?php endif ?>
     <p><span class="underline">Email:</span> <?= Html::email($page->email()) ?></p>
 
@@ -20,7 +20,7 @@
     <?php if (isset($alert['error'])): ?>
       <div><?= $alert['error'] ?></div>
     <?php endif ?>
-    <form method="post" action="<?= $page->url() ?>">
+    <form class="contact-form" method="post" action="<?= $page->url() ?>">
       <div class="honeypot">
         <label for="website">Website <abbr title="required">*</abbr></label>
         <input type="website" id="website" name="website">
@@ -48,10 +48,8 @@
         </textarea>
         <?= isset($alert['text']) ? '<span class="alert error">' . html($alert['text']) . '</span>' : '' ?>
       </div>
-      <div class="button-container">
-        <input type="submit" name="submit" value="Submit">
-        <input type="reset" name="reset" value="Reset">
-      </div>
+      <input type="submit" name="submit" value="Submit">
+      <input class="reset-button" type="reset" name="reset" value="Reset">
     </form>
     <?php endif ?>
 

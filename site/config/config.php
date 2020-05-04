@@ -17,5 +17,13 @@ return [
   ],
   'panel' =>[
     'install' => true
-  ]
+  ],
+  'email' => [
+    'transport' => [
+      'type' => 'smtp',
+      'host' => 'smtp.company.com',
+      'port' => 465,
+      'security' => true
+    ]
+    ]
 ];

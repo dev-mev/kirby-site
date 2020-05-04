@@ -23,8 +23,11 @@ a:hover {
 }
 
 nav {
-  display: inline-block;
   float: right;
+}
+
+nav ul {
+  padding-left: 0;
 }
 
 nav li {
@@ -56,4 +59,24 @@ footer {
 h2 {
   font: 16px Arial, Verdana, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .mobile-menu {
+    display: block;
+    float: right;
+    background-image: url("../images/appbar.lines.horizontal.4.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 50px;
+    height: 100px;
+  }
+
+  nav {
+    display: none;
+  }
 }

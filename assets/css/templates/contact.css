@@ -1,6 +1,7 @@
 .banner-image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 form {
@@ -19,24 +20,15 @@ form input, form textarea {
   margin: 0 auto;
 }
 
-.button-container {
-  margin: 40px auto;
-}
-
 form input[type="submit"], form input[type="reset"] {
   width: unset;
+  display: inline-block;
   padding: 7px 28px 7px 28px;
-  margin: 10px 10px 0 0;
+  margin: 40px auto;
   font-size: 0.75em;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  -webkit-appearance: none;
-  -webkit-transition: all 450ms;
-  -moz-transition: all 450ms;
-  -ms-transition: all 450ms;
-  -o-transition: all 450ms;
-  transition: all 450ms;
   background: #999999;
   color: #000066;
 }

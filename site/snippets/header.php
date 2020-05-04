@@ -13,6 +13,7 @@
     <title><?= $page->mtitle() ?></title>
 
     <?= css(['assets/css/index.css', '@auto']) ?>
+    <?= js('assets/js/script.js') ?>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -48,7 +49,7 @@
       <nav>
         <ul class="navbar">
           <li>
-            <a href="home.html" rel="self">Main</a>
+            <a href="home" rel="self">Main</a>
           </li>
           <li>
             <p>How To Prepare</p>
@@ -57,7 +58,7 @@
             <p>CDA Interview Questions</p>
           </li>
           <li>
-            <a href="contact.html" rel="self">Contact Us</a>
+            <a href="contact" rel="self">Contact Us</a>
           </li>
           <?php if ($user = $kirby->user()): ?>
             <li>
@@ -66,4 +67,6 @@
           <?php endif ?>
         </ul>
       </nav>
+
+      <div class="mobile-menu"></div>
     </header>
