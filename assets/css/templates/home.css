@@ -1,0 +1,17 @@
+.banner-image-text {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  color: white;
+  text-align: center;
+}
+
+.headline {
+  font: 17px Arial, Verdana, Helvetica, sans-serif;
+  color: #000066;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+title: Home Page
+preset: page
+fields:
+  title:
+    label: Page title
+    type: text
+  mtitle:
+    label: Meta title
+    type: text
+  mdescription:
+    label: Meta description
+    type: text
+  toggle:
+    label: Allow indexing?
+    type: toggle
+    text:
+        - "No"
+        - "Yes"
+  phone:
+    label: Phone
+    type: tel
+  email:
+    label: Email (this will update the form e-mail address)
+    type: email

@@ -1,0 +1,32 @@
+title: Site
+sections:
+  drafts:
+    headline: Drafts
+    type: pages
+    status: draft
+
+  unlisted:
+    unlisted:
+    headline: Unlisted
+    type: pages
+    status: unlisted
+
+  published:
+    headline: Published Articles
+    type: pages
+    status: listed
+
+  fields:
+    fields:
+      copyright:
+        label: Copyright
+        type: text
+      pixel:
+        label: Pixel URL
+        type: text
+      tags:
+        label: Google Tags
+        type: tags
+
+
+
