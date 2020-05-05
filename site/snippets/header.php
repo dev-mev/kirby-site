@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="<?= $page->mdescription()->html() ?>">
 
-    <?php if($page->toggle()->toBool() === true): ?>
+    <?php if($page->toggle()->toBool() === false): ?>
     <meta name="robots" content="noindex">
     <?php endif ?>
 
